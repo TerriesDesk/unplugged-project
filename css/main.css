@@ -263,4 +263,6 @@ textarea {
     page-break-after: avoid;
   }
 }
-
+body {
+  background: pink;
+}
