@@ -656,6 +656,10 @@ footer .copyright {
         width:40%;
       }
 
+      .map figure {
+        padding-bottom: 45.5%;
+      }
+
       .contact-section .content-wrapper h2 {
         width:80%;
       }
@@ -744,6 +748,10 @@ footer .copyright {
     }
 
 /* About Page -- Desktop Styles*/
+  .map figure {
+    padding-bottom: 37.5%;
+  }
+
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 100%;
