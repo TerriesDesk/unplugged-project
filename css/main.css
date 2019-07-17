@@ -141,6 +141,14 @@ address {
   font-style: normal;
 }
 
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
 .content-wrapper {
   width: 90%;
   margin:50px 0;
@@ -169,6 +177,14 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+  }
+
+  header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
   }
 
 .header-divider {
@@ -238,10 +254,12 @@ footer .copyright {
   ========================================================================== */
   /* Hero Area */
     .hero-area {
+      background: url('../img/unplugged-retreat.jpg') center no-repeat #333;
+      background-size: cover;
+      min-height: 500px;
       display: flex;
       justify-content: center;
       flex-flow: row wrap;
-      border: 1px solid #000;
     }
 
     .hero-area h1 {
@@ -285,6 +303,8 @@ footer .copyright {
 
   /* Features */
     .features {
+      background: url('../img/unplugged-retreat-features.jpg') center no-repeat #333;
+      background-size: cover;
       display: flex;
       justify-content: center;
       flex-flow: row wrap;
@@ -340,7 +360,6 @@ footer .copyright {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
-      border: 1px solid #000;
     }
 
     .contact-section {
@@ -349,7 +368,6 @@ footer .copyright {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
-      border: 1px solid #000;
     }
 
     .contact-content p {
@@ -365,7 +383,6 @@ footer .copyright {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
-      border: 1px solid #000;
     }
 
     .faq .content-wrapper {
@@ -474,9 +491,7 @@ footer .copyright {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+   Media Queries for Responsive Design.
    ========================================================================== */
 @media only screen and (min-width: 768px) {
   /* Tablet styles here */
@@ -512,12 +527,11 @@ footer .copyright {
       }
 
       header nav {
-        width:20%;
+        width: 20%;
       }
 
       header nav ul {
         justify-content: space-between;
-
       }
 
       header-divider {
@@ -525,12 +539,11 @@ footer .copyright {
       }
 
     /* Hero Area */
-
-      .hero-area h1 {
-        font-size: 3em;
-        line-height: 1;
-        margin: 0;
-      }
+    .hero-area h1 {
+      font-size: 3em;
+      line-height: 1;
+      margin: 0;
+    }
 
 
     /* Aside  */
@@ -576,6 +589,7 @@ footer .copyright {
         width: 90%;
       }
 
+      .reviews article figure,
       .reviews article div {
         width: 49%;
       }
